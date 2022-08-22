@@ -4,7 +4,6 @@
 
 
 from faker import Faker
-from faker.providers import internet
 from faker_wifi_essid import WifiESSID
 
 
