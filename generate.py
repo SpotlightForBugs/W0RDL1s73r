@@ -311,7 +311,5 @@ def fake_credit_card_provider_wordlist(number: int):
 
 try:
     fake_essid_wordlist(100)
-
-    pass
 except UniquenessException:
     print("Error - Duplicate entry, stopping generation")
