@@ -19,7 +19,7 @@ def clear_file():
     print('Done')
 
 
-def fake_name_wordlist(number):
+def fake_name_wordlist(number: int):
     """
     The fake_name_wordlist function creates a text file with fake names.
        The number of names is determined by the user.
@@ -36,7 +36,7 @@ def fake_name_wordlist(number):
     print("Done")
 
 
-def fake_free_email_wordlist(number):
+def fake_free_email_wordlist(number: int):
     """
     The fake_free_email_wordlist function creates a wordlist of fake free email addresses.
     The function takes one argument, number, which specifies the number of emails to be created.
@@ -53,7 +53,7 @@ def fake_free_email_wordlist(number):
     print("Done")
 
 
-def fake_net_wordlist(number):
+def fake_net_wordlist(number: int):
     """
     The fake_net_wordlist function creates a text file with fake IP addresses.
     The function takes one argument, number, which is the number of lines to be created in the text file.
@@ -70,7 +70,7 @@ def fake_net_wordlist(number):
     print("Done")
 
 
-def fake_phone_wordlist(number):
+def fake_phone_wordlist(number: int):
     """
     The fake_phone_wordlist function creates a text file with fake phone numbers.
     The function takes one argument, number, which is the number of fake phone numbers to be created.
@@ -87,7 +87,7 @@ def fake_phone_wordlist(number):
     print("Done")
 
 
-def fake_MAC_wordlist(number):
+def fake_MAC_wordlist(number: int):
     """
     The fake_MAC_wordlist function creates a text file with fake MAC addresses.
     The function takes one argument, number, which is the number of lines to be written in the text file.
@@ -104,7 +104,7 @@ def fake_MAC_wordlist(number):
     print("Done")
 
 
-def fake_essid_wordlist(number):
+def fake_essid_wordlist(number: int):
     """
     The fake_essid_wordlist function creates a wordlist of fake wifi essid's.
     The function takes one argument, number, which is the number of fake essid's to create.
@@ -122,7 +122,7 @@ def fake_essid_wordlist(number):
     print("Done")
 
 
-def fake_password_wordlist(number):
+def fake_password_wordlist(number: int):
     """
     The fake_password_wordlist function creates a text file with a number of fake passwords.
     The function takes one argument, the number of passwords to be created.
@@ -139,7 +139,7 @@ def fake_password_wordlist(number):
     print("Done")
 
 
-def fake_address_wordlist(number):
+def fake_address_wordlist(number: int):
     """
     The fake_address_wordlist function creates a text file with fake addresses.
         The function takes one argument, number, which is the number of fake addresses to create.
@@ -156,7 +156,7 @@ def fake_address_wordlist(number):
     print("Done")
 
 
-def fake_job_wordlist(number):
+def fake_job_wordlist(number: int):
     """
     The fake_job_wordlist function creates a text file with the number of lines specified by the user. 
     The function also creates a unique job title for each line in the text file.
@@ -173,7 +173,7 @@ def fake_job_wordlist(number):
     print("Done")
 
 
-def fake_text_wordlist(number):
+def fake_text_wordlist(number: int):
     """
     The fake_text_wordlist function creates a text file with fake words.
        It takes one argument, number, which is the number of lines to be created.
@@ -190,7 +190,7 @@ def fake_text_wordlist(number):
     print("Done")
 
 
-def fake_sentence_wordlist(number):
+def fake_sentence_wordlist(number: int):
     """
     The fake_sentence_wordlist function creates a text file with a number of sentences.
     The function takes one argument, the number of sentences to be written in the file.
@@ -207,7 +207,7 @@ def fake_sentence_wordlist(number):
     print("Done")
 
 
-def fake_paragraph_wordlist(number):
+def fake_paragraph_wordlist(number: int):
     """
     The fake_paragraph_wordlist function creates a text file with paragraphs of fake text.
     The number of paragraphs is determined by the user.
@@ -224,7 +224,7 @@ def fake_paragraph_wordlist(number):
     print("Done")
 
 
-def fake_user_name_wordlist(number):
+def fake_user_name_wordlist(number: int):
     """
     The fake_user_name_wordlist function creates a text file with fake user names.
     The function takes one argument, number, which is the number of fake user names to create.
@@ -241,7 +241,7 @@ def fake_user_name_wordlist(number):
     print("Done")
 
 
-def fake_user_agent_wordlist(number):
+def fake_user_agent_wordlist(number: int):
     """
     The fake_user_agent_wordlist function creates a text file containing fake user agent strings.
     The function takes one argument, number, which is the number of fake user agents to create.
@@ -258,7 +258,7 @@ def fake_user_agent_wordlist(number):
     print("Done")
 
 
-def fake_snn_wordlist(number):
+def fake_snn_wordlist(number: int):
     """
     The fake_snn_wordlist function creates a text file with the specified number of fake SSNs.
     The function also prints 'Done' when it is finished.
@@ -275,7 +275,7 @@ def fake_snn_wordlist(number):
     print("Done")
 
 
-def fake_credit_card_wordlist(number):
+def fake_credit_card_wordlist(number: int):
     """
     The fake_credit_card_wordlist function creates a text file containing fake credit card numbers.
     The function takes one argument, number, which is the number of fake credit card numbers to be generated.
@@ -292,7 +292,7 @@ def fake_credit_card_wordlist(number):
     print("Done")
 
 
-def fake_credit_card_provider_wordlist(number):
+def fake_credit_card_provider_wordlist(number: int):
     """
     The fake_credit_card_provider_wordlist function creates a wordlist of credit card providers.
     The function takes one argument, number, which is the number of lines to be written in the text file.
