@@ -310,32 +310,47 @@ def fake_credit_card_provider_wordlist(number: int):
     print("Done")
 
 
-
-
-#argument parser for all the functions
+# argument parser for all the functions
 parser = argparse.ArgumentParser(description="Generate fake data")
-parser.add_argument("-a", "--address", help="Generate fake addresses", action="store_true")
+parser.add_argument(
+    "-a", "--address", help="Generate fake addresses", action="store_true"
+)
 parser.add_argument("-j", "--job", help="Generate fake job titles", action="store_true")
 parser.add_argument("-t", "--text", help="Generate fake text", action="store_true")
-parser.add_argument("-s", "--sentence", help="Generate fake sentences", action="store_true")
-parser.add_argument("-p", "--paragraph", help="Generate fake paragraphs", action="store_true")
-parser.add_argument("-u", "--user_name", help="Generate fake user names", action="store_true")
-parser.add_argument("-ua", "--user_agent", help="Generate fake user agents", action="store_true")
+parser.add_argument(
+    "-s", "--sentence", help="Generate fake sentences", action="store_true"
+)
+parser.add_argument(
+    "-p", "--paragraph", help="Generate fake paragraphs", action="store_true"
+)
+parser.add_argument(
+    "-u", "--user_name", help="Generate fake user names", action="store_true"
+)
+parser.add_argument(
+    "-ua", "--user_agent", help="Generate fake user agents", action="store_true"
+)
 parser.add_argument("-sn", "--ssn", help="Generate fake SSNs", action="store_true")
-parser.add_argument("-cc", "--credit_card", help="Generate fake credit card numbers", action="store_true")
-parser.add_argument("-ccp", "--credit_card_provider", help="Generate fake credit card providers", action="store_true")
-parser.add_argument("-n", "--number", help="Number of fake data to generate", type=int, required=True)
+parser.add_argument(
+    "-cc",
+    "--credit_card",
+    help="Generate fake credit card numbers",
+    action="store_true",
+)
+parser.add_argument(
+    "-ccp",
+    "--credit_card_provider",
+    help="Generate fake credit card providers",
+    action="store_true",
+)
+parser.add_argument(
+    "-n", "--number", help="Number of fake data to generate", type=int, required=True
+)
 args = parser.parse_args()
 
 
-
-
-
-
-
 try:
-    
-    #run the functions based on the arguments
+
+    # run the functions based on the arguments
     if args.address:
         fake_address_wordlist(args.number)
     elif args.job:
@@ -356,11 +371,6 @@ try:
         fake_credit_card_wordlist(args.number)
     elif args.credit_card_provider:
         fake_credit_card_provider_wordlist(args.number)
-    
-    
-   
-    
-    
 
     pass
 except UniquenessException:
