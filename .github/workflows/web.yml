@@ -1,19 +1,19 @@
  name: website
 
 # build the documentation whenever there are new commits on main
-on:
-  push:
-    branches:
-      - pro
+ on:
+   push:
+     branches:
+       - pro
     # Alternative: only build for tags.
     # tags:
     #   - '*'
 
 # security: restrict permissions for CI jobs.
-permissions:
-  contents: read
+ permissions:
+   contents: read
 
-jobs:
+ jobs:
   # Build the documentation and upload the static HTML files as an artifact.
   build:
     runs-on: ubuntu-latest
