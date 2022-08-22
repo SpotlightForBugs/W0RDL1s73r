@@ -18,10 +18,14 @@ Create Wordlist in seconds
 ```bash
 git clone https://github.com/SpotlightForBugs/W0RDL1s73r
 cd W0RDL1s73r
+pip install -r requirements.txt
 
 ```
 
 ### Usage
+
+## Fake Data Wordlists
+```python3 generate.py ```
 
 ```
 Generate fake data
@@ -43,6 +47,9 @@ options:
                         Number of fake data to generate
 ```
 
+
+## Custom Data Worldlists
+```python3 passwordParams.py ```
 
 ```
 Generate custom wordlist based on input
