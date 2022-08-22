@@ -8,50 +8,46 @@ list_to_write = []
 
 
 # print all combinations of the values in the list
-def writeAllCombinations(list,var,delimiter):
-    var = var.split(' ')
+def writeAllCombinations(list, var, delimiter):
+    var = var.split(" ")
     for i in var:
-            list.append(i)
+        list.append(i)
 
-    with open('passwords.txt', 'w', encoding="UTF8") as f:
+    with open("passwords.txt", "w", encoding="UTF8") as f:
         for line in list:
-            f.write(line + '\n')
-    
-    
-    
+            f.write(line + "\n")
+
     for i in range(len(list)):
         for j in range(len(list)):
             list_to_write.append((list[i], list[j]))
-    
-    
-    with open('passwords.txt', 'w',encoding="UTF8") as f:
+
+    with open("passwords.txt", "w", encoding="UTF8") as f:
         for line in list_to_write:
-            f.write(line[0] +delimiter+ line[1] + '\n')
-           
-        #append the values to the list
-       
+            f.write(line[0] + delimiter + line[1] + "\n")
+
+        # append the values to the list
 
 
-
-#argparse one argument for the input String and one argument for the delimiter
+# argparse one argument for the input String and one argument for the delimiter
 parser = argparse.ArgumentParser()
-parser.add_argument('-i', help='input string',required=True, type=str, dest='input', action='store')
-parser.add_argument('-d', help='which delimiter to use',action='store', default='-',required=False,dest='delimiter')
+parser.add_argument(
+    "-i", help="input string", required=True, type=str, dest="input", action="store"
+)
+parser.add_argument(
+    "-d",
+    help="which delimiter to use",
+    action="store",
+    default="-",
+    required=False,
+    dest="delimiter",
+)
 args = parser.parse_args()
 
 
-
-
-
-var=args.input
+var = args.input
 if args.delimiter:
     delimiter = args.delimiter
 else:
-    delimiter = '-'
-    
-writeAllCombinations(list=list, var=var,delimiter=delimiter)
+    delimiter = "-"
 
-
-
-
-
+writeAllCombinations(list=list, var=var, delimiter=delimiter)
