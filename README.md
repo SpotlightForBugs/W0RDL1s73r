@@ -43,7 +43,20 @@ options:
                         Number of fake data to generate
 ```
 
+
+```
+Generate custom wordlist based on input
+
+options:
+  -h, --help    show this help message and exit
+  -i INPUT      input string
+  -d DELIMITER  which delimiter to use
+  ```
 ### Contributing
+* Fork
+* Edit
+* PR
+* Repeat
 
 ### License
 
