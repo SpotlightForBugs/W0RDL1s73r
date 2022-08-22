@@ -30,7 +30,7 @@ generator.py -h
 ### Contributing
 
 ### License
-This project is licensed under the  license GPL
+This project is licensed under the  ```GNU General Public License v3.0```
 ### Show your support
 Leave a ⭐ if you like this project
 
