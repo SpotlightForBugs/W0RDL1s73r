@@ -24,7 +24,23 @@ cd W0RDL1s73r
 ### Usage
 
 ```
-generator.py -h
+Generate fake data
+
+options:
+  -h, --help            show this help message and exit
+  -a, --address         Generate fake addresses
+  -j, --job             Generate fake job titles
+  -t, --text            Generate fake text
+  -s, --sentence        Generate fake sentences
+  -p, --paragraph       Generate fake paragraphs
+  -u, --user_name       Generate fake user names
+  -ua, --user_agent     Generate fake user agents
+  -sn, --ssn            Generate fake SSNs
+  -cc, --credit_card    Generate fake credit card numbers
+  -ccp, --credit_card_provider
+                        Generate fake credit card providers
+  -n NUMBER, --number NUMBER
+                        Number of fake data to generate
 ```
 
 ### Contributing
