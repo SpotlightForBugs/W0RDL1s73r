@@ -19,9 +19,9 @@ def writeAllCombinations(list,var,delimiter):
     
     
     
-    for i in range(len(list)):
-        for j in range(len(list)):
-            list_to_write.append((list[i], list[j]))
+    for i, _ in enumerate(list):
+        for j, item in enumerate(list):
+            list_to_write.append((list[i], item))
     
     
     with open('passwords.txt', 'w',encoding="UTF8") as f:
