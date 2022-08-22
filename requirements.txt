@@ -1,3 +1,4 @@
 Faker
 faker-wifi-essid
 argparse
+pdoc
