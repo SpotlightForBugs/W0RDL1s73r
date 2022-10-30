@@ -18,7 +18,7 @@ def writeAllCombinations(list, var, delimiter):
             f.write(line + "\n")
 
     for i, _ in enumerate(list):
-        for j, item in enumerate(list):
+        for item in list:
             list_to_write.append((list[i], item))
 
     with open("passwords.txt", "w", encoding="UTF8") as f:
@@ -45,9 +45,5 @@ args = parser.parse_args()
 
 
 var = args.input
-if args.delimiter:
-    delimiter = args.delimiter
-else:
-    delimiter = "-"
-
+delimiter = args.delimiter or "-"
 writeAllCombinations(list=list, var=var, delimiter=delimiter)
